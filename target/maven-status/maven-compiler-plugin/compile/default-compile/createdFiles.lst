@@ -1,0 +1,14 @@
+com\cafeteria\repositories\ClienteRepository.class
+com\gestion\academica\controller\ProfesorController.class
+com\gestion\academica\repository\ProfesorRepository.class
+com\gestion\academica\entity\Profesor.class
+com\cafeteria\repositories\PedidoRepository.class
+com\cafeteria\entities\Cliente.class
+com\cafeteria\entities\PedidoProductoId.class
+com\cafeteria\repositories\PedidoProductoRepository.class
+com\cafeteria\entities\Producto.class
+com\cafeteria\entities\PedidoProducto.class
+com\cafeteria\entities\Pedido.class
+com\cafeteria\repositories\ProductoRepository.class
+com\gestion\academica\service\ProfesorService.class
+com\gestion\academica\GestionAcademicaApplication.class

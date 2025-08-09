@@ -1,0 +1,79 @@
+### Listar todos los clientes
+GET http://localhost:8080/api/clientes
+Accept: application/json
+
+### Crear un nuevo cliente
+POST http://localhost:8080/api/clientes
+Content-Type: application/json
+
+{
+  "nombre": "Ana Pérez",
+  "direccion": "Zona 3",
+  "telefono": "12345678"
+}
+
+### Actualizar un cliente (modifica el ID)
+PUT http://localhost:8080/api/clientes/1
+Content-Type: application/json
+
+{
+  "nombre": "Ana Pérez Modificada",
+  "direccion": "Zona 10",
+  "telefono": "87654321"
+}
+
+### Eliminar un cliente
+DELETE http://localhost:8080/api/clientes/1
+
+
+### Listar productos
+GET http://localhost:8080/api/productos
+Accept: application/json
+
+### Crear un producto
+POST http://localhost:8080/api/productos
+Content-Type: application/json
+
+{
+  "nombre": "Café",
+  "precio": 15.0,
+  "stock": 100
+}
+
+### Eliminar un producto
+DELETE http://localhost:8080/api/productos/1
+
+
+### Listar pedidos
+GET http://localhost:8080/api/pedidos
+Accept: application/json
+
+### Crear un pedido
+POST http://localhost:8080/api/pedidos
+Content-Type: application/json
+
+{
+  "clienteId": 1,
+  "fecha": "2025-08-07"
+}
+
+### Eliminar un pedido
+DELETE http://localhost:8080/api/pedidos/1
+
+
+### Listar pedidos-productos
+GET http://localhost:8080/api/pedidos-productos
+Accept: application/json
+
+### Crear un pedido-producto
+POST http://localhost:8080/api/pedidos-productos
+Content-Type: application/json
+
+{
+  "pedidoId": 1,
+  "productoId": 1,
+  "cantidad": 2
+}
+
+### Eliminar un pedido-producto
+DELETE http://localhost:8080/api/pedidos-productos/1/1
